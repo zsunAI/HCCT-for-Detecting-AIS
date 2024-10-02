@@ -44,7 +44,7 @@ for n = 1:125 %  125 is number of patients in floders
         a_cd2= detcoef2('d',c,s,2); % high _D
     
         %% 
-        a_ca2= appcoef2(c,s,'db1',3); %
+        a_ca3= appcoef2(c,s,'db1',3); %
         recon_a1 = wrcoef2('a',c,s,'db1',1);%
         recon_a2 = wrcoef2('a',c,s,'db1',2);%
         recon_a3 = wrcoef2('a',c,s,'db1',3);%
