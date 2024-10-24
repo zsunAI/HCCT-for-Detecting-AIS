@@ -65,11 +65,11 @@ for n = 1:125 %  125 is number of patients in floders
         % figure,imshow(recon_img,[]);
    end
    temp1 = histeq(temp); 
-   center = 0.9;
-   width = 0.2;
+   % center = 0.9;
+   % width = 0.2;
 
-   M=mat2gray(temp1,[center-(width/2),center+(width/2)]); 
-   A = struct('hdr',a_nii.hdr,'img',M);
+   % M=mat2gray(temp1,[center-(width/2),center+(width/2)]); 
+   A = struct('hdr',a_nii.hdr,'img',temp1);
    outpath_orginal=fullfile('E:\enhance\data2\centerA\processed');
    b = [outpath_orginal,'\',bgFile];
    save_nii(A,b);
